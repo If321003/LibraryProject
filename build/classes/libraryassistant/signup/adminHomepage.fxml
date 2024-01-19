@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="821.0" styleClass="login-form" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryassistant.signup.AdminHomepageController">
+   <children>
+      <VBox layoutX="-3.0" prefHeight="89.0" prefWidth="821.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="443.0" text="Admin Homepage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="188.0" top="18.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="1.0" layoutY="91.0" prefHeight="342.0" prefWidth="174.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#addbooks" prefHeight="74.0" prefWidth="175.0" styleClass="login-btn" stylesheets="@css.css" text="Add Books" textFill="#160eab">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-1.0" top="11.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#showAllbooks" prefHeight="82.0" prefWidth="175.0" styleClass="login-btn" text="Show all Books" textFill="#160eab">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-1.0" top="11.0" />
+               </VBox.margin>
+               <stylesheets>
+                  <URL value="@designLogin.css" />
+                  <URL value="@css.css" />
+               </stylesheets>
+            </Button>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="logout_btn" layoutX="3.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#logoutAction" prefHeight="62.0" prefWidth="165.0" styleClass="login-btn" text="Log out" textFill="#2e9e3b">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@designLogin.css" />
+                        <URL value="@css.css" />
+                     </stylesheets>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="maincontent" layoutX="180.0" layoutY="98.0" prefHeight="474.0" prefWidth="641.0" />
+   </children>
+   <stylesheets>
+      <URL value="@css.css" />
+      <URL value="@designLogin.css" />
+   </stylesheets>
+</AnchorPane>

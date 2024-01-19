@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="518.0" styleClass="backgroundapp" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryassistant.signup.LoginController">
+   <children>
+      <TextField fx:id="emailField" layoutX="22.0" layoutY="116.0" prefHeight="59.0" prefWidth="482.0" promptText="Email" styleClass="textfield" stylesheets="@designLogin.css" />
+      <PasswordField fx:id="passField" layoutX="22.0" layoutY="175.0" prefHeight="51.0" prefWidth="482.0" promptText="Password" styleClass="textfield">
+         <stylesheets>
+            <URL value="@css.css" />
+            <URL value="@designLogin.css" />
+         </stylesheets>
+      </PasswordField>
+      <Button fx:id="loginbutton" layoutX="162.0" layoutY="272.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="206.0" styleClass="login-btn" stylesheets="@css.css" text="Login">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="notification" layoutX="162.0" layoutY="226.0" prefHeight="30.0" prefWidth="206.0" textAlignment="CENTER" textFill="#dd1212" />
+      <VBox layoutY="354.0" prefHeight="39.0" prefWidth="162.0" />
+      <Label layoutX="210.0" layoutY="52.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUpbtn" layoutX="162.0" layoutY="329.0" mnemonicParsing="false" onAction="#signupaction" prefHeight="50.0" prefWidth="206.0" styleClass="login-btn" stylesheets="@css.css" text="Sign up">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
